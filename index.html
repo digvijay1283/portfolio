@@ -8,6 +8,8 @@
       href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
     />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/projects.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
     <title>Document</title>
   </head>
   <body>
@@ -36,15 +38,15 @@
             <span class="line"></span>
           </a>
           <a href=""
-            >Playbook
+            >About
             <span class="line"></span>
           </a>
           <a href=""
-            >Socials
+            >Projects
             <span class="line"></span>
           </a>
           <a href=""
-            >projects
+            >Contact
             <span class="line"></span>
           </a>
         </div>
@@ -244,87 +246,387 @@
           </h2>
         </div>
       </div>
-      <div id="About">
-        <div class="imgcontainer">
-          <!-- <img src="./assets/img1.jpg" alt=""> -->
-        </div>
-        <div class="about-info">
-          <div class="heading">
-            <h1>About <span>Me!!</span></h1>
+      <!-- About Section -->
+      <section id="about-section" data-scroll data-scroll-speed="1">
+        <div class="about-container">
+          <div class="about-heading">
+            <h1>About <span>Me</span></h1>
           </div>
-          <div class="about-text">
-            <p>
-              Hi, I'm <span>Digvijay</span> , a 3rd-year Computer Science (AI & ML) student at
-              Pimpri Chinchwad College of Engineering. <br>
-              I enjoy exploring new technologies and building
-              projects that combine creativity with problem-solving. Currently,
-              I'm growing my skills through hands-on projects, internships, and
-              continuous learning — always excited to take on new challenges and
-              collaborate on impactful work.
-            </p>
-          </div>
-        </div>
-      </div>
-      </div>
-      
-      <!-- Card Animation Section -->
-      <div class="wrapper">
-        <div class="skills-title">
-          <h1>My <span>Tech Stack</span></h1>
-        </div>
-        <div class="inner" style="--quantity: 10;">
-          <div class="card" style="--index: 0; --color-card: 142, 249, 252;">
-            <div class="img">
-              <img src="assets/html.png" alt="Card Image 1">
+
+          <div class="about-content">
+            <div class="about-image">
+              <div class="image-container">
+                <div class="image-frame"></div>
+                <img src="./assets/img2.jpg" alt="Digvijay Bhadgale" />
+                <div class="image-overlay"></div>
+              </div>
             </div>
-          </div>
-          <div class="card" style="--index: 1; --color-card: 142, 252, 204;">
-            <div class="img">
-              <img src="assets/css.png" alt="Card Image 2">
-            </div>
-          </div>
-          <div class="card" style="--index: 2; --color-card: 142, 252, 157;">
-            <div class="img">
-              <img src="assets/js.png" alt="Card Image 3">
-            </div>
-          </div>
-          <div class="card" style="--index: 3; --color-card: 215, 252, 142;">
-            <div class="img">
-              <img src="assets/react.png" alt="Card Image 4">
-            </div>
-          </div>
-          <div class="card" style="--index: 4; --color-card: 252, 252, 142;">
-            <div class="img">
-              <img src="assets/nodejs.png" alt="Card Image 5">
-            </div>
-          </div>
-          <div class="card" style="--index: 5; --color-card: 252, 208, 142;">
-            <div class="img">
-              <img src="assets/tailwindcss.png" alt="Card Image 6">
-            </div>
-          </div>
-          <div class="card" style="--index: 6; --color-card: 252, 142, 142;">
-            <div class="img">
-              <img src="assets/gsap-greensock.png" alt="Card Image 7">
-            </div>
-          </div>
-          <div class="card" style="--index: 7; --color-card: 252, 142, 239;">
-            <div class="img">
-              <img src="assets/mongodb.png" alt="Card Image 8">
-            </div>
-          </div>
-          <div class="card" style="--index: 8; --color-card: 204, 142, 252;">
-            <div class="img">
-              <img src="assets/mysql.png" alt="Card Image 9">
-            </div>
-          </div>
-          <div class="card" style="--index: 9; --color-card: 142, 202, 252;">
-            <div class="img">
-              <img src="assets/sass.png" alt="Card Image 10">
+
+            <div class="about-text-container">
+              <p class="about-text">
+                Hi, I'm <span>Digvijay</span>, a 3rd-year Computer Science (AI &
+                ML) student at Pimpri Chinchwad College of Engineering.
+              </p>
+              <p class="about-text">
+                I enjoy exploring new technologies and building projects that
+                combine <span>creativity</span> with
+                <span>problem-solving</span>.
+              </p>
+              <p class="about-text">
+                Currently, I'm growing my skills through hands-on projects,
+                internships, and continuous learning — always excited to take on
+                new challenges and collaborate on impactful work.
+              </p>
+              <div class="about-cta">
+                <a href="#" class="about-button">Download CV</a>
+                <a href="#" class="about-button secondary">Contact Me</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <!-- Tech Stack Section -->
+      <section id="tech-stack" data-scroll data-scroll-speed="">
+        <div class="tech-container">
+          <div class="tech-heading">
+            <h1>My <span>Tech Stack</span></h1>
+            <p class="tech-subtitle">Technologies I've been working with</p>
+          </div>
+
+          <div class="tech-grid">
+            <div class="tech-item" data-tech="HTML">
+              <div class="tech-item-inner">
+                <div class="tech-icon">
+                  <img src="assets/html.png" alt="HTML" />
+                </div>
+                <div class="tech-name">HTML</div>
+                <div class="tech-glow"></div>
+              </div>
+            </div>
+
+            <div class="tech-item" data-tech="CSS">
+              <div class="tech-item-inner">
+                <div class="tech-icon">
+                  <img src="assets/css.png" alt="CSS" />
+                </div>
+                <div class="tech-name">CSS</div>
+                <div class="tech-glow"></div>
+              </div>
+            </div>
+
+            <div class="tech-item" data-tech="JavaScript">
+              <div class="tech-item-inner">
+                <div class="tech-icon">
+                  <img src="assets/js.png" alt="JavaScript" />
+                </div>
+                <div class="tech-name">JavaScript</div>
+                <div class="tech-glow"></div>
+              </div>
+            </div>
+
+            <div class="tech-item featured" data-tech="React">
+              <div class="tech-item-inner">
+                <div class="tech-icon">
+                  <img src="assets/react.png" alt="React" />
+                </div>
+                <div class="tech-name">React</div>
+                <div class="tech-glow"></div>
+              </div>
+            </div>
+
+            <div class="tech-item" data-tech="Node.js">
+              <div class="tech-item-inner">
+                <div class="tech-icon">
+                  <img src="assets/nodejs.png" alt="Node.js" />
+                </div>
+                <div class="tech-name">Node.js</div>
+                <div class="tech-glow"></div>
+              </div>
+            </div>
+
+            <div class="tech-item" data-tech="Tailwind">
+              <div class="tech-item-inner">
+                <div class="tech-icon">
+                  <img src="assets/tailwindcss.png" alt="Tailwind CSS" />
+                </div>
+                <div class="tech-name">Tailwind</div>
+                <div class="tech-glow"></div>
+              </div>
+            </div>
+
+            <div class="tech-item featured" data-tech="GSAP">
+              <div class="tech-item-inner">
+                <div class="tech-icon">
+                  <img src="assets/gsap-greensock.png" alt="GSAP" />
+                </div>
+                <div class="tech-name">GSAP</div>
+                <div class="tech-glow"></div>
+              </div>
+            </div>
+
+            <div class="tech-item" data-tech="MongoDB">
+              <div class="tech-item-inner">
+                <div class="tech-icon">
+                  <img src="assets/mongodb.png" alt="MongoDB" />
+                </div>
+                <div class="tech-name">MongoDB</div>
+                <div class="tech-glow"></div>
+              </div>
+            </div>
+
+            <div class="tech-item" data-tech="MySQL">
+              <div class="tech-item-inner">
+                <div class="tech-icon">
+                  <img src="assets/mysql.png" alt="MySQL" />
+                </div>
+                <div class="tech-name">MySQL</div>
+                <div class="tech-glow"></div>
+              </div>
+            </div>
+
+            <div class="tech-item" data-tech="Sass">
+              <div class="tech-item-inner">
+                <div class="tech-icon">
+                  <img src="assets/sass.png" alt="Sass" />
+                </div>
+                <div class="tech-name">Sass</div>
+                <div class="tech-glow"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects-section" data-scroll>
+        <div class="projects-container">
+          <div class="projects-heading">
+            <h1>Featuring <span>Pro</span>jects</h1>
+            <div class="heading-line"></div>
+          </div>
+          
+          <!-- Project 1 - Image Left -->
+          <div class="project-item">
+            <div class="project-image left" data-scroll data-scroll-speed="-0.3">
+              <img src="./assets/redefine.png" alt="Redefine Project">
+              <div class="image-overlay"></div>
+            </div>
+            <div class="project-content right">
+              <h2 class="project-title">Redefine <span>UI</span></h2>
+              <p class="project-description">
+                A modern UI framework built for designers and developers. Combines elegant aesthetics with powerful functionality.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">GSAP</span>
+                <span class="tech-tag">Tailwind</span>
+                <span class="tech-tag">Node.js</span>
+              </div>
+              <div class="project-links">
+                <a href="https://digviredefine.netlify.app/" class="project-button">View Live</a>
+                <a href="#" class="project-button secondary">Source Code</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 - Image Right -->
+          <div class="project-item reverse">
+            <div class="project-content left">
+              <h2 class="project-title">Magma <span>Dashboard</span></h2>
+              <p class="project-description">
+                Analytics dashboard with real-time data visualization. Powerful insights delivered through an intuitive interface.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">D3.js</span>
+                <span class="tech-tag">Express</span>
+              </div>
+              <div class="project-links">
+                <a href="https://digvimagma.netlify.app/" class="project-button">View Live</a>
+                <a href="#" class="project-button secondary">Source Code</a>
+              </div>
+            </div>
+            <div class="project-image right" data-scroll data-scroll-speed="0.2">
+              <img src="./assets/magma.png" alt="Magma Dashboard">
+              <div class="image-overlay"></div>
+            </div>
+          </div>
+
+          <!-- Project 3 - Image Left -->
+          <div class="project-item">
+            <div class="project-image left wide" data-scroll data-scroll-speed="-0.4">
+              <img src="./assets/img5.jpg" alt="Portfolio Website">
+              <div class="image-overlay"></div>
+            </div>
+            <div class="project-content right">
+              <h2 class="project-title">Creative <span>Portfolio</span></h2>
+              <p class="project-description">
+                A responsive portfolio website with smooth animations and interactive elements. Showcases work in an elegant layout.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">GSAP</span>
+                <span class="tech-tag">Locomotive</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-button">View Live</a>
+                <a href="#" class="project-button secondary">Source Code</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 - Image Right -->
+          <div class="project-item reverse">
+            <div class="project-content left">
+              <h2 class="project-title">E-commerce <span>Platform</span></h2>
+              <p class="project-description">
+                Full-featured online shopping platform with modern UI/UX. Includes user authentication, product filtering, and payment integration.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Stripe</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-button">View Live</a>
+                <a href="#" class="project-button secondary">Source Code</a>
+              </div>
+            </div>
+            <div class="project-image right tall" data-scroll data-scroll-speed="0.3">
+              <img src="./assets/img8.jpg" alt="E-commerce Platform">
+              <div class="image-overlay"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Me Section -->
+      <section id="contact-section" data-scroll>
+        <div class="contact-container">
+          <div class="contact-heading">
+            <h1>Get In <span>Touch</span></h1>
+            <div class="heading-line"></div>
+          </div>
+          
+          <div class="contact-content">
+            <div class="contact-info">
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="contact-text">
+                  <h3>Email</h3>
+                  <p>digvijay@example.com</p>
+                </div>
+                <div class="card-glow"></div>
+              </div>
+              
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 10C20 14.4183 16.4183 18 12 18C7.58172 18 4 14.4183 4 10C4 5.58172 7.58172 2 12 2C16.4183 2 20 5.58172 20 10Z" stroke="currentColor" stroke-width="2"/>
+                    <path d="M12 18V22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M8 22H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div class="contact-text">
+                  <h3>Location</h3>
+                  <p>Pune, Maharashtra</p>
+                </div>
+                <div class="card-glow"></div>
+              </div>
+              
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.0499 5C16.0267 5.19057 16.9243 5.66826 17.6281 6.37194C18.3318 7.07561 18.8095 7.97326 19.0001 8.95M15.0499 1C17.0792 1.22544 18.9715 2.13417 20.4162 3.57701C21.8609 5.01984 22.7721 6.91101 23.0001 8.94M22.0001 16.92V19.92C22.0011 20.1985 21.9441 20.4742 21.8325 20.7293C21.7209 20.9845 21.5573 21.2136 21.3521 21.4019C21.1468 21.5901 20.9046 21.7335 20.6407 21.8227C20.3769 21.9119 20.0974 21.9451 19.8201 21.92C16.7429 21.5856 13.7871 20.5341 11.1901 18.85C8.77388 17.3147 6.72539 15.2662 5.19006 12.85C3.5001 10.2412 2.44866 7.27097 2.12006 4.18C2.09477 3.90347 2.12732 3.62476 2.21556 3.36162C2.30379 3.09849 2.44569 2.85669 2.63289 2.65163C2.82008 2.44656 3.04792 2.28271 3.30199 2.17052C3.55606 2.05834 3.83076 2.00026 4.11006 2H7.11006C7.59536 1.99522 8.06585 2.16708 8.43382 2.48353C8.80179 2.79999 9.04213 3.23945 9.11005 3.72C9.23668 4.68007 9.47151 5.62273 9.81006 6.53C9.9446 6.88792 9.97372 7.27691 9.89396 7.65088C9.81421 8.02485 9.62892 8.36811 9.36005 8.64L8.09006 9.91C9.51361 12.4135 11.5865 14.4864 14.0901 15.91L15.3601 14.64C15.6319 14.3711 15.9752 14.1858 16.3492 14.1061C16.7231 14.0263 17.1121 14.0555 17.4701 14.19C18.3773 14.5286 19.32 14.7634 20.2801 14.89C20.7658 14.9585 21.2095 15.2032 21.5265 15.5775C21.8434 15.9518 22.0121 16.4296 22.0001 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="contact-text">
+                  <h3>Phone</h3>
+                  <p>+91 98765 43210</p>
+                </div>
+                <div class="card-glow"></div>
+              </div>
+              
+              <div class="socials">
+                <h3>Follow Me</h3>
+                <div class="social-icons">
+                  <a href="#" class="social-icon" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5229 6.47715 22 12 22C17.5229 22 22 17.5229 22 12C22 6.47715 17.5229 2 12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M14.3333 19V17.137C14.3583 16.8275 14.3154 16.5163 14.2073 16.2242C14.0993 15.9321 13.9286 15.6657 13.7067 15.4428C15.8 15.2156 18 14.4431 18 10.8989C17.9998 9.99256 17.6418 9.12101 17 8.46461C17.3039 7.67171 17.2824 6.79528 16.94 6.01739C16.94 6.01739 16.1533 5.7902 14.3333 6.97456C12.8053 6.57287 11.1947 6.57287 9.66666 6.97456C7.84666 5.7902 7.05999 6.01739 7.05999 6.01739C6.71757 6.79528 6.69609 7.67171 6.99999 8.46461C6.35341 9.12588 5.99501 10.0053 6 10.9165C6 14.4354 8.2 15.2078 10.2933 15.4428C10.074 15.6634 9.90483 15.9252 9.79686 16.2122C9.68889 16.4992 9.64453 16.8049 9.66666 17.1096V19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M9.66667 17.7018C7.66667 18.3335 6 17.7018 5 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                  <a href="#" class="social-icon" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M22 3.00005C22 3.00005 21.3 6.10005 19 8.30005C16.7 10.5 13.9 10.4001 12 10.0001C10.1 9.60005 9 8.30005 9 8.30005" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M11 3C11 7.7 14.6 11.4 19.2 12C19.3 12 19.5 12 19.6 12C20.1 12 20.5 11.8 20.8 11.4C21.1 11.1 21.3 10.6 21.3 10.1C21.3 9.6 21.1 9.2 20.7 8.8C20.4 8.5 20 8.3 19.5 8.3L19.2 8.3C16.4 7.9 14.3 5.8 13.9 3.1L13.8 2.7C13.8 2.2 13.6 1.8 13.3 1.5C12.9 1.1 12.5 1 12 1C11 1 10.3 1.7 10.3 2.7L10.3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M11 8.00005C10.6654 7.60445 10.1755 7.38496 9.66302 7.38496C9.15055 7.38496 8.66066 7.60445 8.32605 8.00005L3.32605 14.0001C2.99144 14.3957 2.86635 14.9134 2.98481 15.4077C3.10327 15.9019 3.45187 16.3145 3.92605 16.5001L8.92605 18.5001C9.20272 18.6162 9.5028 18.6729 9.80604 18.6667C10.1093 18.6605 10.4067 18.5916 10.6776 18.4643C10.9485 18.337 11.1862 18.1546 11.374 17.9296C11.5618 17.7046 11.695 17.4427 11.7637 17.1615C11.8323 16.8803 11.8349 16.5871 11.7712 16.3047C11.7076 16.0224 11.5791 15.7582 11.3952 15.5298C11.2113 15.3013 10.9767 15.1148 10.7083 14.9826C10.4399 14.8505 10.1437 14.7762 9.84105 14.7646C9.5384 14.7531 9.23767 14.8047 8.96005 14.9161L5.96005 13.6401L9.66005 9.00005L11.0261 10.0001C11.3606 10.3957 11.8505 10.6152 12.363 10.6152C12.8755 10.6152 13.3654 10.3957 13.7 10.0001L19.7 3.00005C20.0346 2.60444 20.1597 2.08675 20.0412 1.59247C19.9228 1.09819 19.5742 0.68561 19.1 0.500045L14.1 0.500045C13.8233 0.383935 13.5232 0.327277 13.22 0.333386C12.9167 0.339495 12.6193 0.408378 12.3484 0.535715C12.0775 0.663051 11.8398 0.845489 11.652 1.07045C11.4642 1.29541 11.3311 1.55736 11.2624 1.83855C11.1937 2.11974 11.1911 2.41297 11.2548 2.69532C11.3184 2.97767 11.4469 3.24188 11.6308 3.47033C11.8147 3.69877 12.0493 3.88531 12.3177 4.01744C12.5861 4.14958 12.8823 4.22384 13.185 4.23541C13.4876 4.24698 13.7883 4.19538 14.066 4.08395L17.066 4.08395L13.366 9.00005L12 8.00005" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                  <a href="#" class="social-icon" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M16 11.37C16.1234 12.2022 15.9813 13.0522 15.5938 13.799C15.2063 14.5458 14.5932 15.1514 13.8416 15.5297C13.0901 15.9079 12.2385 16.0396 11.4078 15.9059C10.5771 15.7723 9.80977 15.3801 9.21485 14.7852C8.61993 14.1902 8.22774 13.4229 8.09408 12.5922C7.96042 11.7615 8.09208 10.9099 8.47034 10.1584C8.8486 9.40685 9.4542 8.79374 10.201 8.40624C10.9478 8.01874 11.7978 7.87659 12.63 8C13.4789 8.12588 14.2649 8.52146 14.8717 9.1283C15.4785 9.73515 15.8741 10.5211 16 11.37Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <circle cx="16.5" cy="7.5" r="1.5" fill="currentColor"/>
+                    </svg>
+                  </a>
+                  <a href="#" class="social-icon" aria-label="Twitter">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M22 4.01C21 4.5 20.02 4.69 19 5C18.39 4.41 17.59 4.03 16.71 3.93C15.83 3.82 14.94 3.99 14.17 4.4C13.4 4.82 12.79 5.46 12.42 6.24C12.04 7.02 11.91 7.91 12.05 8.77C10.59 8.7 9.16 8.32 7.87 7.64C6.59 6.96 5.48 6.01 4.62 4.84C4.22 5.5 4.04 6.29 4.14 7.05C4.23 7.82 4.62 8.55 5.25 9.06C4.73 9.05 4.22 8.9 3.76 8.64V8.67C3.76 9.57 4.07 10.45 4.64 11.15C5.2 11.85 5.99 12.33 6.87 12.5C6.39 12.64 5.88 12.66 5.39 12.56C5.62 13.34 6.09 14.04 6.75 14.54C7.4 15.04 8.19 15.32 9.01 15.34C8.2 15.98 7.28 16.46 6.29 16.76C5.3 17.06 4.25 17.16 3.22 17.05C5.09 18.08 7.22 18.63 9.39 18.63C16.82 18.63 20.91 12.69 20.91 7.58C20.91 7.43 20.91 7.29 20.9 7.14C21.9 6.42 22.77 5.52 23.46 4.49L22 4.01Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="contact-form-container">
+              <form class="contact-form">
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="name" required>
+                  <div class="input-line"></div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" required>
+                  <div class="input-line"></div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input type="text" id="subject" name="subject" required>
+                  <div class="input-line"></div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="message">Your Message</label>
+                  <textarea id="message" name="message" rows="5" required></textarea>
+                  <div class="input-line"></div>
+                </div>
+                
+                <button type="submit" class="submit-button">
+                  <span>Send Message</span>
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
     <script
@@ -336,6 +638,16 @@
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/Flip.min.js"></script>
+    <!-- <script>
+      function locoInitialize(){
+          const scroll = new LocomotiveScroll({
+          el: document.querySelector("#main"),
+          smooth: true,
+        });
+        }
+
+      locoInitialize();
+    </script> -->
     <script src="./scripts/animation.js"></script>
   </body>
 </html>
