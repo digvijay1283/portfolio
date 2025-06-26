@@ -3,18 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Document</title>
   </head>
   <body>
-    <div id="main">
+    <div id="main" data-scroll-container data-scroll-speed="1">
       <div id="loader">
         <div id="topheading">
           <h5 class="reveal">Design Portolio</h5>
           <h5 class="reveal">&copy; 2022</h5>
         </div>
-        <h1 class="reveal">Digvijay <span>is a</span></h1>
-        <h2 class="reveal"><span>Web developer</span></h2>
+        <div class="text-content">
+          <div class="text-content_1">
+            <h1 class="reveal">This <span>is My</span></h1>
+            <h2 class="reveal"><span>Portfolio Website</span></h2>
+          </div>
+          <div class="text-content_2">
+            <h1 class="reveal">Myself <span>Digvijay</span></h1>
+            <h2 class="reveal"><span>& I'm a</span></h2>
+          </div>
+        </div>
       </div>
       <div id="green"></div>
       <div id="home">
@@ -204,19 +216,112 @@
               </g>
             </svg>
           </div>
-          <h1 class="heading_2">Developer</h1>
+          <h1 class="heading_2">Web-Dev</h1>
         </div>
         <div id="imagery">
           <div class="imglef">
             <h1>
-              I am Digvijay Bhadgale,I <br> create <span>Unconventional</span>  <br> yet functional & <br>
-              visually pleasing <br> interfaces for the <br> web.
+              I am Digvijay Bhadgale,I <br />
+              create <span>Unconventional</span> <br />
+              yet functional & <br />
+              visually pleasing <br />
+              interfaces for the <br />
+              web.
             </h1>
           </div>
           <div class="imgrig">
-            <div class="imgcntnr a"> </div>
+            <div class="imgcntnr a"></div>
             <div class="imgcntnr b"></div>
             <div class="imgcntnr c"></div>
+          </div>
+        </div>
+        <div class="bottom-text">
+          <h5>Things I Can Help you <br />with.</h5>
+          <h2>
+            Web & mobile / Development / <br />
+            Branding / front-end <br />
+            Development
+          </h2>
+        </div>
+      </div>
+      <div id="About">
+        <div class="imgcontainer">
+          <!-- <img src="./assets/img1.jpg" alt=""> -->
+        </div>
+        <div class="about-info">
+          <div class="heading">
+            <h1>About <span>Me!!</span></h1>
+          </div>
+          <div class="about-text">
+            <p>
+              Hi, I'm <span>Digvijay</span> , a 3rd-year Computer Science (AI & ML) student at
+              Pimpri Chinchwad College of Engineering. <br>
+              I enjoy exploring new technologies and building
+              projects that combine creativity with problem-solving. Currently,
+              I'm growing my skills through hands-on projects, internships, and
+              continuous learning — always excited to take on new challenges and
+              collaborate on impactful work.
+            </p>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      <!-- Card Animation Section -->
+      <div class="wrapper">
+        <div class="skills-title">
+          <h1>My <span>Tech Stack</span></h1>
+        </div>
+        <div class="inner" style="--quantity: 10;">
+          <div class="card" style="--index: 0; --color-card: 142, 249, 252;">
+            <div class="img">
+              <img src="assets/html.png" alt="Card Image 1">
+            </div>
+          </div>
+          <div class="card" style="--index: 1; --color-card: 142, 252, 204;">
+            <div class="img">
+              <img src="assets/css.png" alt="Card Image 2">
+            </div>
+          </div>
+          <div class="card" style="--index: 2; --color-card: 142, 252, 157;">
+            <div class="img">
+              <img src="assets/js.png" alt="Card Image 3">
+            </div>
+          </div>
+          <div class="card" style="--index: 3; --color-card: 215, 252, 142;">
+            <div class="img">
+              <img src="assets/react.png" alt="Card Image 4">
+            </div>
+          </div>
+          <div class="card" style="--index: 4; --color-card: 252, 252, 142;">
+            <div class="img">
+              <img src="assets/nodejs.png" alt="Card Image 5">
+            </div>
+          </div>
+          <div class="card" style="--index: 5; --color-card: 252, 208, 142;">
+            <div class="img">
+              <img src="assets/tailwindcss.png" alt="Card Image 6">
+            </div>
+          </div>
+          <div class="card" style="--index: 6; --color-card: 252, 142, 142;">
+            <div class="img">
+              <img src="assets/gsap-greensock.png" alt="Card Image 7">
+            </div>
+          </div>
+          <div class="card" style="--index: 7; --color-card: 252, 142, 239;">
+            <div class="img">
+              <img src="assets/mongodb.png" alt="Card Image 8">
+            </div>
+          </div>
+          <div class="card" style="--index: 8; --color-card: 204, 142, 252;">
+            <div class="img">
+              <img src="assets/mysql.png" alt="Card Image 9">
+            </div>
+          </div>
+          <div class="card" style="--index: 9; --color-card: 142, 202, 252;">
+            <div class="img">
+              <img src="assets/sass.png" alt="Card Image 10">
+            </div>
           </div>
         </div>
       </div>
@@ -228,7 +333,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/Flip.min.js"></script>
     <script src="./scripts/animation.js"></script>
   </body>
 </html>

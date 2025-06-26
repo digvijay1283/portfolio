@@ -39,7 +39,7 @@ html, body {
 }
 
 #loader{
-    /* display: none; */
+    display: none;
     position: absolute;
     width:100%;
     height:100vh;
@@ -67,22 +67,34 @@ h2 > span {
     font-family:"Mazius";
 }
 
-#loader h1{
-    position: absolute;
+
+#loader .text-content{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
     top: 50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    font-size:4vw; 
+    padding: 0 3vw;
+    /* left:50%; */
+    /* transform: translate(-50%,-50%); */
+    font-size:2vw; 
     font-weight: 500;
     font-family: "GilroyMedium", sans-serif;
     color: white;
     padding-bottom: 5px;
+    line-height: 2;
+    align-items: center;    
 }
-#loader h2{
+.text-content_1{
+    padding-left: 5vw;
+}
+.text-content_2{
+    padding-right: 5vw;
+}
+#loader .text-content h2{
     position: absolute;
     top: 60%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    /* left:50%; */
+    /* transform: translate(-50%,-50%); */
     font-size:4vw; 
     font-weight: 500;
     font-family: "GilroyMedium", sans-serif;
@@ -120,7 +132,7 @@ h2 > span {
 }
 
 #green{
-    /* display: none;   */
+    display: none;  
     position:absolute;
     top:100%;
     width: 100%;
@@ -129,6 +141,7 @@ h2 > span {
 }
 
 #home{
+    display: none;
     /* position: relative; */
     /* top: 100%; */
     width: 100%;
@@ -185,6 +198,7 @@ h2 > span {
 }
 .row .heading_2{
     font-size: 11vw;
+    
     /* margin-top: -10vh; */
     /* padding-left: 20vw; */
 }
@@ -200,7 +214,7 @@ h2 > span {
 }  
 
 .row svg{
-    height: 0vw;
+    height: 10vw;
     text-align: center;
     justify-content: center;
     margin: 0 1vw;
@@ -214,7 +228,7 @@ path, polyline{
 #home #nav a,
 #imagery .imglef h1,
 #imagery .imgrig{
-  opacity: 0;
+  opacity: 1;
   transform: translateY(20px);
 }
 
@@ -267,7 +281,7 @@ path, polyline{
     width: 25vw;
     height:35vw;
     border-radius: 2vw;
-    transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+    transition: filter cubic-bezier(0.19, 1, 0.22, 1) 2s;
     filter: grayscale(80%); 
      margin-bottom: 10vw;
     /* padding-bottom: 10vw;  */
@@ -291,8 +305,269 @@ path, polyline{
 }
 .imgrig .imgcntnr:nth-child(3){
     transform:translate(25%,10%) rotate(-5deg);
-    /* background-color: steelblue; */
     background-image: url(../assets/img6.jpg);
     background-size: cover;
     background-position: center;
+}
+
+.bottom-text{
+    position:relative;
+    height: 30vh;
+    width: 100%;
+    padding: 0 7vw;
+    line-height: 1;
+}
+
+.bottom-text h5{
+    font-size: 1.2rem;
+    padding-bottom: 1.5vw;
+}
+
+.bottom-text h2{
+    font-family: "gilroymedium";
+    color: #383838;
+    text-transform: uppercase;
+}
+
+#About{
+    position: relative;
+    min-height: 100vh;
+    background-color: #383838;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 5vw;
+    flex-wrap: wrap;
+}
+
+
+#About .imgcontainer{
+    height: 40vw;
+    width: 25vw;
+    background-color: steelblue;
+    border-radius: 50px;
+    /* object-fit: cover; /* or 'contain' if you want full visibility */
+    /* object-position: center;  */
+    background-image: url(../assets/img2.jpg);
+    background-size: cover;
+    object-position: center;
+}
+#About .about-info{
+    /* background-color: #14cf93; */
+    width: 60%;
+    height: 80%;
+
+}
+
+#About .about-info .heading{
+    /* background-color:steelblue; */
+    width: 100%;
+    height: 30%;
+    margin-bottom: 3vw;
+    align-items: center;
+    justify-content: end;
+    display: flex;
+    
+}
+
+.heading h1{
+    font-size: 5.5vw;
+    color: #dadada;
+}
+
+.heading h1 span{
+    color: #14cf93;
+    text-transform: none;
+    font-size: 6vw;
+}
+
+#About .about-info .about-text{
+    width: 100%;
+    height: 63%;
+    /* background-color: steelblue; */
+}
+
+.about-text p{
+    font-size: 1.7vw;
+    color: #dadada;
+}
+
+/* Card Animation Styles */
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #383838;
+}
+
+.inner {
+  --w: 150px; /* Increased size for better visibility */
+  --h: 200px;
+  --translateZ: 350px; /* Much larger rotation radius */
+  --rotateX: -15deg;
+  --perspective: 1500px;
+  position: absolute;
+  width: var(--w);
+  height: var(--h);
+  top: 30%;
+  left: calc(50% - (var(--w) / 2));
+  z-index: 2;
+  transform-style: preserve-3d;
+  transform: perspective(var(--perspective));
+  animation: rotating 25s linear infinite;
+}
+
+@keyframes rotating {
+  from {
+    transform: perspective(var(--perspective)) rotateX(var(--rotateX)) rotateY(0);
+  }
+  to {
+    transform: perspective(var(--perspective)) rotateX(var(--rotateX)) rotateY(1turn);
+  }
+}
+
+.card {
+  position: absolute;
+  border: none; /* Remove basic border */
+  border-radius: 16px;
+  overflow: hidden;
+  inset: 0;
+  transform: rotateY(calc((360deg / var(--quantity)) * var(--index))) translateZ(var(--translateZ));
+  box-shadow: 
+    0 20px 30px rgba(0, 0, 0, 0.4),
+    0 6px 12px rgba(0, 0, 0, 0.3),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Glassmorphism effect */
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Add glow effect based on card color */
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at 50% 0%, 
+    rgba(var(--color-card), 0.5) 0%, 
+    rgba(var(--color-card), 0) 70%
+  );
+  opacity: 0.8;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+/* Image styling */
+.img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.9);
+  position: relative;
+  overflow: hidden;
+}
+
+.img::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  pointer-events: none;
+}
+
+.img img {
+  width: 75%; /* Keep logo size reasonable */
+  height: 75%;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Add tech name at the bottom of card */
+.img::before {
+  content: attr(data-tech);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  background: rgba(var(--color-card), 0.8);
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.wrapper .skills-title {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 3;
+}
+
+.skills-title h1 {
+  font-size: 5vw;
+  color: #dadada;
+  font-family: "gilroymedium";
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+}
+
+.skills-title h1 span {
+  color: #14cf93;
+  font-family: "Mazius";
+  text-transform: none;
+}
+
+/* Pause animation on hover to inspect cards */
+.wrapper:hover .inner {
+  animation-play-state: paused;
+}
+
+/* Add card hover effect when animation is paused */
+.wrapper:hover .card:hover {
+  transform: rotateY(calc((360deg / var(--quantity)) * var(--index))) translateZ(calc(var(--translateZ) + 50px)) scale(1.1);
+  box-shadow: 
+    0 30px 40px rgba(0, 0, 0, 0.5),
+    0 10px 20px rgba(0, 0, 0, 0.4),
+    inset 0 0 0 2px rgba(var(--color-card), 0.6);
+}
+
+.wrapper:hover .card:hover .img img {
+  transform: scale(1.1);
+  filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.2));
+}
+
+/* Add subtle floating particles in the background */
+.wrapper::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(circle at 20% 30%, rgba(20, 207, 147, 0.1) 0%, rgba(20, 207, 147, 0) 20%),
+    radial-gradient(circle at 80% 70%, rgba(20, 207, 147, 0.1) 0%, rgba(20, 207, 147, 0) 20%);
+  pointer-events: none;
 }
